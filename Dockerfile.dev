@@ -1,0 +1,7 @@
+FROM eclipse-temurin:17.0.8.1_1-jre-jammy
+
+WORKDIR '/app'
+
+COPY target/demo-docker2-0.0.1-SNAPSHOT.jar demo-docker2-0.0.1-SNAPSHOT.jar
+
+CMD ["java","-jar","demo-docker2-0.0.1-SNAPSHOT.jar"]
